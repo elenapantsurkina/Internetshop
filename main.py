@@ -1,5 +1,5 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
-import os
+
 
 # Настройки запуска
 hostName = "localhost"  # Адрес для доступа по сети
