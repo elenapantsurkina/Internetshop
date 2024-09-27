@@ -13,7 +13,7 @@ class MyServer(BaseHTTPRequestHandler):
         """ Метод для обработки входящих GET-запросов """
 
         if self.path == "/":
-            self.path = "/contacts.html"  # Перенаправление на страницу контактов
+            self.path = "/contact.html"  # Перенаправление на страницу контактов
 
         if self.path.endswith(".html"):
             content_type = "text/html"
