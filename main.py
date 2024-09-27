@@ -19,6 +19,8 @@ class MyServer(BaseHTTPRequestHandler):
             content_type = "text/html"
         elif self.path.endswith(".css"):
             content_type = "text/css"
+        elif self.path.endswith(".js"):
+            content_type = "application/javascript"
         else:
             self.send_response(404)
             self.end_headers()
